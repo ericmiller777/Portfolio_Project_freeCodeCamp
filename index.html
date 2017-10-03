@@ -51,6 +51,7 @@ color: grey;
 .navbar-default .navbar-brand{
   color: white;
 }
+
 #closing{
   text-align: center;
 }
@@ -59,18 +60,25 @@ color: grey;
   background-color: rgb(52, 52, 52);
   color: rgb(255, 255, 255);
 }
+
+.btn:hover{
+  color: rgb(255, 255, 255);
+}
+
+.btn:focus{
+  color: rgb(255, 255, 255);
+}
 </style>
 <body>
 <nav class="navbar navbar-default hidden-xs">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Eric Miller</a>
+      <a class="navbar-brand" href="https://ericmiller777.github.io/Portfolio_Project_freeCodeCamp/">Eric Miller</a>
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Page 1</a></li>
-      <li><a href="#">Page 2</a></li>
-      <li><a href="#">Page 3</a></li>
+      <li><a href="#" id="games">Responsive Web Games</a></li>
+      <li><a href="#" id="apps">Responsive Web Apps</a></li>
     </ul>
   </div>
 </nav>
@@ -87,9 +95,8 @@ color: grey;
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
               <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">Page 1</a></li>
-              <li><a href="#">Page 2</a></li>
-              <li><a href="#">Page 3</a></li>
+              <li><a href="#" id="games">Responsive Web Games</a></li>
+              <li><a href="#" id="apps">Responsive Web Apps</a></li>
             </ul>
           </div>
         </div>
@@ -106,6 +113,7 @@ color: grey;
                 <li data-target="#carousel" data-slide-to="2"> </li>
                 <li data-target="#carousel" data-slide-to="3"> </li>
                 <li data-target="#carousel" data-slide-to="4"> </li>
+                <li data-target="#carousel" data-slide-to="5"> </li>
             </ol>
             <div class="carousel-inner">
                 <div class="item active">
@@ -114,6 +122,15 @@ color: grey;
                     <div class="hidden-xs hidden-sm jumbotron carousel-caption">
                         <h4>Tic-Tac-Toe</h4>
                         <p>A Responsive, and well organized Tic-Tac-Toe game.</p>
+                    </div>
+                </a>
+                </div>
+                <div class="item">
+                    <a href="https://ericmiller777.github.io/Simon_Game_freeCodeCamp/"/>
+<img src="game.png" alt="Simon">
+                    <div class="hidden-xs hidden-sm jumbotron carousel-caption">
+                        <h4>Simon</h4>
+                        <p>A Responsive, and well organized Simon game.</p>
                     </div>
                 </a>
                 </div>
@@ -177,6 +194,13 @@ Github</a>
 </div>
 </div>
 <script>
+$("#games").on("click", function(){
+  $("#carousel").carousel(0);
+});
+
+$("#apps").on("click", function(){
+$("#carousel").carousel(2);
+});
 </script>    
 </body>
 </html>
