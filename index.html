@@ -1,0 +1,182 @@
+<html>
+<head>
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- Latest compiled and minified JavaScript  -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
+  crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<link href="https://fonts.googleapis.com/css?family=Geo" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+h1{
+  color: rgb(52, 52, 52);
+  text-align: center;
+  font-family: geo;
+  font-size: 3em;
+}
+h2{
+  text-align: center;
+  color: rgb(52, 52, 52);
+  font-family: geo;
+}
+ul{
+  float: right;
+}
+.carousel-caption{
+  background-color: rgb(52, 52, 52);
+}
+
+.navbar{
+  background-color: rgb(52, 52, 52);
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+color: grey;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: white;
+}
+
+.navbar-default .navbar-brand{
+  color: white;
+}
+#closing{
+  text-align: center;
+}
+
+.btn{
+  background-color: rgb(52, 52, 52);
+  color: rgb(255, 255, 255);
+}
+</style>
+<body>
+<nav class="navbar navbar-default hidden-xs">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Eric Miller</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Page 1</a></li>
+      <li><a href="#">Page 2</a></li>
+      <li><a href="#">Page 3</a></li>
+    </ul>
+  </div>
+</nav>
+<nav class="navbar navbar-default hidden-sm hidden-md hidden-lg">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Eric Miller</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">Page 1</a></li>
+              <li><a href="#">Page 2</a></li>
+              <li><a href="#">Page 3</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+<div class="container">
+<div>
+  <h1>Hello!</h1>
+  <h2>My name is Eric Miller, I am a aspiring front end developer, I have my front end certification from freeCodeCamp(<a href="https://www.freecodecamp.org/ericmiller777/front-end-certification">Here</a>), and would like to be a full time professional front end developer, below are links to some of the projects i have worked on.</h2>
+</div>
+<div id="carousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"> </li>
+                <li data-target="#carousel" data-slide-to="1"> </li>
+                <li data-target="#carousel" data-slide-to="2"> </li>
+                <li data-target="#carousel" data-slide-to="3"> </li>
+                <li data-target="#carousel" data-slide-to="4"> </li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <a href="https://ericmiller777.github.io/Tic_Tac_Toe_freeCodeCamp"/>
+<img class="img-responsive" src="tictactoe.png" alt="Tic-Tac-Toe">
+                    <div class="hidden-xs hidden-sm jumbotron carousel-caption">
+                        <h4>Tic-Tac-Toe</h4>
+                        <p>A Responsive, and well organized Tic-Tac-Toe game.</p>
+                    </div>
+                </a>
+                </div>
+                <div class="item">
+                    <a href="https://ericmiller777.github.io/Wikipedia_App_freeCodeCamp/">
+                            <img src="Wikipedia_app.png" alt="Wikipedia App">
+                                                <div class="hidden-xs hidden-sm jumbotron carousel-caption">
+                                                    <h4>Wikipedia Viewer</h4>
+                                                    <p>Uses the Wikipedia api to let the user search, and returns links relateing to the query in a informative,
+                                                        and well organized way.</p>
+                                                </div>
+                                            </a>
+                </div>
+                <div class="item">
+                    <a href="https://ericmiller777.github.io/Weather_App_freeCodeCamp/">
+                            <img src="Weather_app.png" alt="Weather App">
+                                                <div class="hidden-xs hidden-sm jumbotron carousel-caption">
+                                                    <h4>Weather App</h4>
+                                                    <p>Uses geolocation to get the current weather for a users location, and presents it to them in a informative, and responcive way, includes a button to convert fahrenheit to celcius, if the user would like.</p>
+                                                </div>
+                                            </a>
+                </div>
+                <div class="item">
+                    <a href="https://ericmiller777.github.io/Twitch_App_freeCodeCamp/">
+                            <img src="Twitch_app.png" alt="Twitch app">
+                                                <div class="hidden-xs hidden-sm jumbotron carousel-caption">
+                                                    <h4>Twitch App</h4>
+                                                    <p>Uses the Twich api to create a list of streamers, checks if they are online, if they are streaming, and returns information regarding what they are streaming, in a clean, and informative way.</p>
+                                                </div>
+                                            </a>
+                </div>
+                <div class="item">
+                    <a href="https://ericmiller777.github.io/Quote_Machine_freeCodeCamp/">
+                            <img src="Quote_Machine.png" alt="Quote Machine">
+                                                <div class="hidden-xs hidden-sm jumbotron carousel-caption">
+                                                    <h4>Quote Machine</h4>
+                                                    <p>Gets random quote from an API, allows the user to get a new quote, or to tweet the current qoute.</p>
+                                                </div>
+                                            </a>
+                </div>
+            </div>
+            <a class="right carousel-control" href="#carousel" data-slide="next">
+<span class="glyphicon glyphicon-chevron-right"> </span>
+<span class="sr-only">Next</span>
+</a>
+            <a class="left carousel-control" href="#carousel" data-slide="prev">
+<span class="glyphicon glyphicon-chevron-left"> </span>
+<span class="sr-only">Previous</span>
+</a>
+</div>
+<div id="closing" class="row">
+<div class="col">
+<h2>Also on:</h2>
+<a href="https://www.linkedin.com/in/ericmiller777/" target = "_blank" title="linkedin" class="btn btn-lg"> <i class="fa fa-linkedin" aria-hidden="true"></i>
+LinkedIn</a>
+    <a href="https://github.com/ericmiller777" target = "_blank" title="Github" class="btn btn-lg"><i class="fa fa-github" aria-hidden="true"></i>
+Github</a>
+      <a href="https://www.freecodecamp.org/ericmiller777" target = "_blank" title="freeCodeCamp" class="btn btn-lg"><i class="fa fa-free-code-camp" aria-hidden="true"></i>
+      freeCodeCamp</a>
+</div>
+</div>
+</div>
+<script>
+</script>    
+</body>
+</html>
