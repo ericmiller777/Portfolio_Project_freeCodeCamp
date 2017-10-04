@@ -1,153 +1,163 @@
 <html>
+
 <head>
-<!-- jQuery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-<!-- Latest compiled and minified JavaScript  -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
-  crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript  -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
+    crossorigin="anonymous">
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-<link href="https://fonts.googleapis.com/css?family=Geo" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Geo" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <style>
-a{
+  a {
     color: rgb(52, 52, 52);
-}
-h1{
-  color: rgb(52, 52, 52);
-  text-align: center;
-  font-family: geo;
-  font-size: 3em;
-}
-h2{
-  text-align: center;
-  color: rgb(52, 52, 52);
-  font-family: geo;
-}
-ul{
-  float: right;
-}
-.carousel-caption{
-  background-color: rgb(52, 52, 52);
-}
+  }
 
-.navbar{
-  background-color: rgb(52, 52, 52);
-}
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-color: grey;
-}
+  h1 {
+    color: rgb(52, 52, 52);
+    text-align: center;
+    font-family: geo;
+    font-size: 3em;
+  }
 
-.navbar-default .navbar-nav > li > a {
-  color: white;
-}
+  h2 {
+    text-align: center;
+    color: rgb(52, 52, 52);
+    font-family: geo;
+  }
 
-.navbar-default .navbar-brand{
-  color: white;
-}
+  ul {
+    float: right;
+  }
 
-#closing{
-  text-align: center;
-}
+  .carousel-caption {
+    background-color: rgb(52, 52, 52);
+  }
 
-#closing > a{
-  margin: 5000px;
-}
+  .navbar {
+    background-color: rgb(52, 52, 52);
+  }
 
-.btn{
-  background-color: rgb(52, 52, 52);
-  color: rgb(255, 255, 255);
-}
+  .navbar-default .navbar-nav>li>a:hover,
+  .navbar-default .navbar-nav>li>a:focus {
+    color: grey;
+  }
 
-.btn:hover{
-  color: rgb(255, 255, 255);
-}
+  .navbar-default .navbar-nav>li>a {
+    color: white;
+  }
 
-.btn:focus{
-  color: rgb(255, 255, 255);
-}
+  .navbar-default .navbar-brand {
+    color: white;
+  }
 
-.btn-primary{
-  margin: 2%;
-}
+  #closing {
+    text-align: center;
+  }
 
-.btn-primary:active:focus{
-  background-color: rgb(52, 52, 52);
-}
+  #closing>a {
+    margin: 5000px;
+  }
 
-.btn-primary:focus{
-  background-color: rgb(52, 52, 52);
-}
+  .btn {
+    background-color: rgb(52, 52, 52);
+    color: rgb(255, 255, 255);
+  }
 
-.btn-primary:hover{
-  background-color: grey;
-}
+  .btn:hover {
+    color: rgb(255, 255, 255);
+  }
+
+  .btn:focus {
+    color: rgb(255, 255, 255);
+  }
+
+  .btn-primary {
+    margin: 2%;
+  }
+
+  .btn-primary:active:focus {
+    background-color: rgb(52, 52, 52);
+  }
+
+  .btn-primary:focus {
+    background-color: rgb(52, 52, 52);
+  }
+
+  .btn-primary:hover {
+    background-color: grey;
+  }
 </style>
+
 <body>
-<nav class="navbar navbar-default hidden-xs">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="http://ericthegreatproductions.com/">Eric Miller</a>
+  <nav class="navbar navbar-default hidden-xs">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="http://ericthegreatproductions.com/">Eric Miller</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="http://ericthegreatproductions.com/">Home</a></li>
+        <li class="active"><a id="games" href="http://ericthegreatproductions.com/game_apps.html">Responsive Web Games</a></li>
+        <li><a id="apps" href="http://ericthegreatproductions.com/web_apps.html">Responsive Web Apps</a></li>
+      </ul>
     </div>
-    <ul class="nav navbar-nav">
-      <li><a href="http://ericthegreatproductions.com/">Home</a></li>
-      <li class="active"><a id="games" href="http://ericthegreatproductions.com/game_apps/">Responsive Web Games</a></li>
-      <li><a id="apps" href="http://ericthegreatproductions.com/web_apps/">Responsive Web Apps</a></li>
-    </ul>
-  </div>
-</nav>
-<nav class="navbar navbar-default hidden-sm hidden-md hidden-lg">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+  </nav>
+  <nav class="navbar navbar-default hidden-sm hidden-md hidden-lg">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="http://ericthegreatproductions.com/">Eric Miller</a>
-          </div>
-          <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-              <li><a href="http://ericthegreatproductions.com/">Home</a></li>
-              <li class="active"><a id="games"  href="http://ericthegreatproductions.com/game_apps/">Responsive Web Games</a></li>
-              <li><a id="apps" href="http://ericthegreatproductions.com/web_apps/">Responsive Web Apps</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-<div class="container">
-<h1><a href="https://ericmiller777.github.io/Tic_Tac_Toe_freeCodeCamp">Tic-Tac-Toe</a></h1>
-<h2>A Responsive, and well organized Tic-Tac-Toe game.</h2>
-<a href="https://ericmiller777.github.io/Tic_Tac_Toe_freeCodeCamp">
-<img href="https://ericmiller777.github.io/Tic_Tac_Toe_freeCodeCamp" class="img-responsive" class="img-responsive" src="tictactoe.png" alt="Tic-Tac-Toe">
+        <a class="navbar-brand" href="http://ericthegreatproductions.com/">Eric Miller</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="http://ericthegreatproductions.com/">Home</a></li>
+          <li class="active"><a id="games" href="http://ericthegreatproductions.com/game_apps.html">Responsive Web Games</a></li>
+          <li><a id="apps" href="http://ericthegreatproductions.com/web_apps.html">Responsive Web Apps</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <h1><a href="https://ericmiller777.github.io/Tic_Tac_Toe_freeCodeCamp">Tic-Tac-Toe</a></h1>
+    <h2>A Responsive, and well organized Tic-Tac-Toe game.</h2>
+    <a href="https://ericmiller777.github.io/Tic_Tac_Toe_freeCodeCamp">
+<img href="https://ericmiller777.github.io/Tic_Tac_Toe_freeCodeCamp" class="img-responsive" class="img-responsive" src="./Images/tictactoe.png" alt="Tic-Tac-Toe">
 </a>
-<h1><a href="https://ericmiller777.github.io/Simon_Game_freeCodeCamp/">Simon</a></h1>
-<h2>A Responsive, and well organized Simon game.</h2>
-<a href="https://ericmiller777.github.io/Simon_Game_freeCodeCamp/">
-<img class="img-responsive" src="game.png" alt="Simon">
+    <h1><a href="https://ericmiller777.github.io/Simon_Game_freeCodeCamp/">Simon</a></h1>
+    <h2>A Responsive, and well organized Simon game.</h2>
+    <a href="https://ericmiller777.github.io/Simon_Game_freeCodeCamp/">
+<img class="img-responsive" src="./Images/game.png" alt="Simon">
 </a>
-<div id="closing" class="row">
-<div class="col">
-<h2>Also on:</h2>
-<a id="linkedin" href="https://www.linkedin.com/in/ericmiller777/" target = "_blank" title="linkedin" class="btn btn-primary"> <i class="fa fa-linkedin" aria-hidden="true"></i>
+    <div id="closing" class="row">
+      <div class="col">
+        <h2>Also on:</h2>
+        <a id="linkedin" href="https://www.linkedin.com/in/ericmiller777/" target="_blank" title="linkedin" class="btn btn-primary"> <i class="fa fa-linkedin" aria-hidden="true"></i>
 LinkedIn</a>
-    <a id="github" href="https://github.com/ericmiller777" target = "_blank" title="Github" class="btn btn-primary"><i class="fa fa-github" aria-hidden="true"></i>
+        <a id="github" href="https://github.com/ericmiller777" target="_blank" title="Github" class="btn btn-primary"><i class="fa fa-github" aria-hidden="true"></i>
 Github</a>
-      <a id="freecodecamp" href="https://www.freecodecamp.org/ericmiller777" target = "_blank" title="freeCodeCamp" class="btn btn-primary"><i class="fa fa-free-code-camp" aria-hidden="true"></i>
+        <a id="freecodecamp" href="https://www.freecodecamp.org/ericmiller777" target="_blank" title="freeCodeCamp" class="btn btn-primary"><i class="fa fa-free-code-camp" aria-hidden="true"></i>
       freeCodeCamp</a>
-</div>
-</div>
-</div>
-<script>
-</script>    
+      </div>
+    </div>
+  </div>
+  <script>
+
+  </script>
 </body>
+
 </html>
